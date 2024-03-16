@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="Number">Think of a number : </label>
+        <input type="number" id="Number"/>
+        <button >Enter</button>
+    </form>
+    <script>
+
+        document.querySelector('button').addEventListener('click',(e)=>{
+            const number = document.querySelector('input').value
+            setTimeout(() => {
+                alert(`You r thinking of ${number}`)  
+            }, 3000);
+            e.preventDefault()
+
+        })
+    </script>
+</body>
+</html>
